@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载站</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- 自定义样式 -->
+</head>
+<body class="bg-gray-50">
+
+    <!-- 头部导航栏 -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="/" class="text-xl font-bold text-gray-700">下载站</a>
+            <nav class="flex space-x-6">
+                <a href="/" class="text-gray-600 hover:text-blue-600">主页</a>
+                <a href="/categories" class="text-gray-600 hover:text-blue-600">分类</a>
+                <a href="/search" class="text-gray-600 hover:text-blue-600">搜索</a>
+                <select class="bg-blue-500 text-white p-2 rounded">
+                    <option>中文</option>
+                    <option>English</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主体内容区域 -->
+    <main class="container mx-auto py-8">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-2xl font-bold mb-4">文件夹列表</h2>
+            <table class="min-w-full table-auto">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2 text-left">名称</th>
+                        <th class="px-4 py-2 text-left">大小</th>
+                        <th class="px-4 py-2 text-left">修改时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 文件夹项 -->
+                    <tr class="border-b hover:bg-gray-100">
+                        <td class="px-4 py-2">
+                            <a href="/folder/123" class="text-blue-600 hover:underline">123云盘</a>
+                        </td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">2024-10-05 20:30:54</td>
+                    </tr>
+                    <tr class="border-b hover:bg-gray-100">
+                        <td class="px-4 py-2">
+                            <a href="/folder/kuakeyunpan" class="text-blue-600 hover:underline">kuakeyunpan</a>
+                        </td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">2024-11-17 19:24:09</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-black">&copy; 灵亦的下载站. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="https://space.bilibili.com/3493116828977764" class="text-black mx-2">哔哩哔哩</a>
+                <a href="https://github.com/lingyi-git" class="text-black mx-2">github</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
