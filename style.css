@@ -1,0 +1,23 @@
+/* 自定义样式 */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #1e3a8a;
+}
