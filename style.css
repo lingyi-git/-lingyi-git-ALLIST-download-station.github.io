@@ -42,16 +42,31 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
+/* 底部样式 */
 footer {
-    text-align: center;
     padding: 10px 0;
 }
 
 footer a {
     text-decoration: none;
-    color: #f8f8f8;
+    color: black;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+footer p {
+    color: black;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+    footer a {
+        display: inline-block;
+        margin: 0 5px;
+    }
 }
